@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     {
         anim = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        goal = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
