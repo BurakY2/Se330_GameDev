@@ -18,6 +18,14 @@ public class EnemyHealth : MonoBehaviour
         if(zombiehealth == 0 || zombiehealth < 0)
         {
             anim.SetBool("EnemyDead", true);
+            StartCoroutine(Dead());
         }
+    }
+
+    private IEnumerator Dead()
+    {
+        yield return new WaitForSeconds(8f);
+        Destroy(gameObject);
+       
     }
 }
