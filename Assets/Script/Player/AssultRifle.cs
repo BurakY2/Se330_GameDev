@@ -8,12 +8,14 @@ public class AssultRifle : MonoBehaviour
     public float damage = 40;
     public ParticleSystem muzzleFlash;
     public LayerMask _layer;
+    public GameObject rifle;
     
 
     // Start is called before the first frame update
     void Start()
     {
         //muzzleFlash.Stop();
+        muzzleFlash.Stop();
     }
 
     // Update is called once per frame
@@ -22,11 +24,14 @@ public class AssultRifle : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            
         }
+        
     }
 
     public void Shoot()
     {
+        rifle.SetActive(true);
         muzzleFlash.Play();
         RaycastHit hitObject;
         if(Physics.Raycast(camera.transform.position, camera.transform.forward,out hitObject,Mathf.Infinity,_layer,QueryTriggerInteraction.Ignore))
@@ -38,6 +43,8 @@ public class AssultRifle : MonoBehaviour
                 target.hitByPlayer(damage);
             }
         }
-        muzzleFlash.Stop();
+        rifle.SetActive(false);
+        
+
     }
 }
