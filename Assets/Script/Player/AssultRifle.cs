@@ -7,11 +7,13 @@ public class AssultRifle : MonoBehaviour
     public Camera camera;
     public float damage = 40;
     public ParticleSystem muzzleFlash;
+    public LayerMask _layer;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        muzzleFlash.Stop();
+        //muzzleFlash.Stop();
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class AssultRifle : MonoBehaviour
     {
         muzzleFlash.Play();
         RaycastHit hitObject;
-        if(Physics.Raycast(camera.transform.position, camera.transform.forward,out hitObject))
+        if(Physics.Raycast(camera.transform.position, camera.transform.forward,out hitObject,Mathf.Infinity,_layer,QueryTriggerInteraction.Ignore))
         {
             Debug.Log(hitObject.transform.name);
             EnemyHealth target = hitObject.transform.GetComponent<EnemyHealth>();
@@ -36,6 +38,6 @@ public class AssultRifle : MonoBehaviour
                 target.hitByPlayer(damage);
             }
         }
-       
+        muzzleFlash.Stop();
     }
 }

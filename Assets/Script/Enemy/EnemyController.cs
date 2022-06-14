@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public Transform goal;
     private Animator anim;
     private NavMeshAgent agent;
+    public bool AtackingTrigger = false;
     
     void Start()
     {
@@ -30,11 +31,18 @@ public class EnemyController : MonoBehaviour
         {
             anim.SetFloat("Running", 0);
         }
+
+        if(AtackingTrigger == true)
+        {
+            Debug.Log("Attacking");
+            anim.SetTrigger("Attack");
+        }
         
 
 
     }
 
+    /*
     private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -43,4 +51,5 @@ public class EnemyController : MonoBehaviour
             anim.SetTrigger("Attack");
         }
     }
+    */
 }
