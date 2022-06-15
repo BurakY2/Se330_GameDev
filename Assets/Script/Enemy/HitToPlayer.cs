@@ -20,7 +20,7 @@ public class HitToPlayer : MonoBehaviour
         {
             
             Debug.Log("Enemy Atacking");
-            playerheal.PlayerHealth -= 2f;
+            playerheal.PlayerHealth -= 20f;
             
         }
     }
