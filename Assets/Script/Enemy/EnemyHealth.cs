@@ -26,6 +26,10 @@ public class EnemyHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(8f);
         Destroy(gameObject);
-       
+    }
+
+    public void hitByPlayer(float damage)
+    {
+        zombiehealth = zombiehealth - damage;
     }
 }
