@@ -6070,7 +6070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2aa36971b6f7d4691f709d424efd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthText: {fileID: 0}
+  HealthText: {fileID: 1667032150}
+  PlayerHeal: {fileID: 2014959927}
 --- !u!114 &1667032150
 MonoBehaviour:
   m_ObjectHideFlags: 0
