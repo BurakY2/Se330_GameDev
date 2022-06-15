@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHeal : MonoBehaviour
 {
     public float PlayerHealth = 100f;
-
+    public GameObject cam;
     private void Start()
     {
         PlayerHealth = 100;
@@ -14,5 +14,11 @@ public class PlayerHeal : MonoBehaviour
     private void Update()
     {
         Debug.Log(PlayerHealth);
+
+        if (PlayerHealth <= 0)
+        {
+            Destroy(gameObject);
+            cam.SetActive(true);
+        }
     }
 }

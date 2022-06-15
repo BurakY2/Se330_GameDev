@@ -21,7 +21,7 @@ public class MouseLook : MonoBehaviour
         
         // Look Y axis
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -40f, 30f);
+        xRotation = Mathf.Clamp(xRotation, -30, 55f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 

@@ -22,6 +22,7 @@ public class EnemyHealth : MonoBehaviour
         {
             anim.SetBool("EnemyDead", true);
             agent.isStopped = true;
+            Destroy(gameObject.GetComponent<Collider>());
             StartCoroutine(Dead());
         }
     }
