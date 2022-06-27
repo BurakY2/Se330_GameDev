@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 4564232433599885554}
-  enemyController: {fileID: 3717159532876074189}
+  enemyController: {fileID: 0}
 --- !u!1 &251202815823413163
 GameObject:
   m_ObjectHideFlags: 0

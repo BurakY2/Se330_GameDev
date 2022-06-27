@@ -22,8 +22,7 @@ public class Enemyranger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(agent.stoppingDistance);
-        Debug.LogWarning("Remaining distance: " + agent.remainingDistance);
+        
         try
         {
             float a = agent.speed;
