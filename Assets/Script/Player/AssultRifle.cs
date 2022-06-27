@@ -33,7 +33,11 @@ public class AssultRifle : MonoBehaviour
             muzzleFlash.Stop();
             
         }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = 0;
+            StartCoroutine(reload());
+        }
     }
 
     public void Shoot()

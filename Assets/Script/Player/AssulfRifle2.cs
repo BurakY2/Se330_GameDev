@@ -33,7 +33,13 @@ public class AssulfRifle2 : MonoBehaviour
             muzzleFlash.Stop();
             
         }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = 0;
+            StartCoroutine(reload());
+        }
+
+
     }
 
     public void Shoot()

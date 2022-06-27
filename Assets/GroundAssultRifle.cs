@@ -8,6 +8,7 @@ public class GroundAssultRifle : MonoBehaviour
        
         if(other.gameObject.tag == "Player"){
             AmmoScript.secondGunFlag = true;
+            Destroy(gameObject);
         }
     }
 }
