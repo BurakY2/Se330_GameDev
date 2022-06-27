@@ -1734,6 +1734,7 @@ GameObject:
   - component: {fileID: 5811708638137920865}
   - component: {fileID: 5811708638137920867}
   - component: {fileID: 5811708638137920869}
+  - component: {fileID: 1824691523856474500}
   m_Layer: 0
   m_Name: warzombie_f_pedroso@Zombie Scratch Idle
   m_TagString: Untagged
@@ -1755,6 +1756,7 @@ Transform:
   m_Children:
   - {fileID: 6292952438891159457}
   - {fileID: 6100219761142554596}
+  - {fileID: 1760736770652182029}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1840,6 +1842,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
   AtackingTrigger: 0
+--- !u!114 &1824691523856474500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658079362384986642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4450ec4942437f3428f17b33e3a2679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4276151986450378964, guid: 1bb7c68529580084e86ce95be046661f, type: 3}
+  tip: {fileID: 1760736770652182029}
 --- !u!1 &6728695204040628547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2303,37 @@ Transform:
   m_Father: {fileID: 1252947393584301260}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.000008761882, y: -1.764504e-13, z: 7.254267e-13}
+--- !u!1 &8790547691587331857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760736770652182029}
+  m_Layer: 0
+  m_Name: Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760736770652182029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8790547691587331857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.157, y: 1.063, z: 0.365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6281940164610709672}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9092383180983370131
 GameObject:
   m_ObjectHideFlags: 0

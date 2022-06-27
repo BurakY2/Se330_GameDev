@@ -8,6 +8,9 @@ TagManager:
   - SpawnPoint
   - Secondcam
   - Impact
+  - GroundCheck
+  - Ground
+  - secondGun
   layers:
   - Default
   - TransparentFX
