@@ -20,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if(zombiehealth == 0 || zombiehealth < 0)
         {
+            gameObject.tag = "Untagged";
             anim.SetBool("EnemyDead", true);
             agent.isStopped = true;
             Destroy(gameObject.GetComponent<Collider>());

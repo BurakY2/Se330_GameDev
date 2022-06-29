@@ -1302,7 +1302,7 @@ GameObject:
   - component: {fileID: 1778015951}
   m_Layer: 0
   m_Name: Zombie Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1360,7 +1360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
+  Impact: {fileID: 0}
   AtackingTrigger: 0
+  Attackingmeal: 0
 --- !u!195 &3717159532876074188
 NavMeshAgent:
   m_ObjectHideFlags: 0

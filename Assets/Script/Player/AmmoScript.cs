@@ -12,6 +12,7 @@ public class AmmoScript : MonoBehaviour
     public static bool secondGunFlag = false;
     public GameObject firstGun;
     public GameObject SecondGun;
+    public GameObject Winpanel;
     private void Start()
     {
         AmmoText1_.SetActive(true);
@@ -39,6 +40,11 @@ public class AmmoScript : MonoBehaviour
             SecondGun.SetActive(true);
             AmmoText1_.SetActive(false);
             AmmoText2_.SetActive(true);
+        }
+
+        if (!GameObject.FindGameObjectWithTag("Enemy"))
+        {
+            Winpanel.SetActive(true);
         }
     }
 
